@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiivinen suunnittelu</title>
+    <style>
+      body {
+        background-color: rgb(80, 155, 221);
+      }
+      p {
+        font-family: 'Courier New', monospace, Courier;
+        width: 500px;
+        margin: auto;
+      }
+       #kissa {
+      width: 100%;
+      max-width: 700px;
+    }
+      @media screen and (min-width: 800px) {
+        body {
+          background-color: lightcoral;
+        }
+      }
+      @media screen and (min-width: 600px) {
+        body {
+          background-color: rgb(54, 140, 102);
+        }
+      }
+
+      @media screen and (max-width: 700px) and (min-width: 600px) {
+        p{
+          font-size: 20px
+      }
+    }
+
+
+    @media screen and (min-width: 720px) {
+      #kissa {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    #kissa2 {
+      width: 300px;
+      height: 50px;
+      object-fit: cover;
+
+    }
+    #taustakuva {
+      width: 500px;
+      height: 500px;
+      background-color: aliceblue;
+      background-image: url(public/img/kisu.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    @media screen and (min-width: 700px) {
+      #kissa {
+        display: block;
+        margin: auto;
+      }
+    }
+    #taustakuva {
+      background-image: url(public/img/lataus\ \(1\).jpg);
+      background-attachment: fixed;
+    }
+    </style>
+  </head>
+  <body>
+    <h3>Otsikko</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+      reprehenderit magnam, voluptas, facilis nisi nihil quod debitis accusamus
+      ad nulla minus distinctio exercitationem id pariatur, similique aliquid a
+      dolore necessitatibus!
+    </p>
+    <h3>Normaaali img kuva ja mediasäännöt</h3>
+    <img id="kissa" src="public/img/cat.jpg" alt="" />
+
+    <h3>Object-fit</h3>
+    <img id="kissa2" src="public/img/cat.jpg" alt="" />
+
+    <h3>Taustakuva</h3>
+    <div id="taustakuva"></div>
+  </body>
+</html>

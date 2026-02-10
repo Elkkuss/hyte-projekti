@@ -1,0 +1,134 @@
+/*********************/
+/* BMI osion tyylittely */
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  background-color: white;
+  color: #fff;
+  padding: 0.5rem 4rem;
+  font-weight: 100;
+  font-size: 1.2em;
+  background-color: black;
+  box-shadow: 0 8px 16px -6px black;
+  height: 100px;
+  border-radius: 5px;
+}
+
+nav ul {
+  padding-top: 15px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul li:first-child a {
+  background-color: rgb(65 77 159);
+
+  background-image: linear-gradient(45deg, rgb(86, 210, 216), rgb(65 77 159));
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: larger;
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  margin-right: 40px;
+}
+
+nav ul a {
+  color: rgb(138, 170, 198);
+  padding: 0.6rem;
+  margin: 0 0.25em;
+  font-size: smaller;
+  transition: color 0.5s;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a:hover {
+  color: rgb(205, 255, 155);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+.card > h2 {
+  margin-top: 15px;
+}
+
+.card p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.description {
+  color: grey;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+}
+
+input[type='text'] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(30, 39, 46);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.btn:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+tbody {
+  background-color: #fff;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.lowBmi {
+  background-color: rgb(71, 178, 210);
+}
+.normalBmi {
+  background-color: rgb(112, 223, 112);
+}
+.highBmi {
+  background-color: rgb(244, 148, 30);
+}
