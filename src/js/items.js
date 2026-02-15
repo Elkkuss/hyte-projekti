@@ -155,6 +155,81 @@ await getItems();
 console.log(items);
 };
 
+// Load item to PUT form
+
+const loadItemToPutForm = async () => {
+  const idInput = document.querySelector('#putItemId');
+  const nameInput = document.querySelector('#putItemName');
+
+  const itemId = idInput.value.trim();
+
+  if (!itemId) {
+    alert('Anna Item ID');
+    return;
+  }
+
+  const url = `http://localhost:3000/api/items/${itemId}`;
+
+  const item = await fetchData(url);
+
+  if (item.error) {
+    console.error(item.error);
+    alert(`Error: ${item.error}`);
+    return;
+  }
+
+  //täytetään nimi kenttään
+  nameInput.value = item.name ?? '';
+
+  alert(`Haettu item: ${item.name}`);
+};
+
+// Update item (PUT by id)
+
+const updateItemById = async (event) => {
+  event.preventDefault();
+
+  const idInput = document.querySelector('#putItemId');
+  const nameInput = document.querySelector('#putItemName');
+
+  const itemId = idInput.value.trim();
+  const newName = nameInput.value.trim();
+
+  if (!itemId) {
+    alert('Item ID puuttuu');
+    return;
+  }
+
+  if (!newName) {
+    alert('Uusi nimi puuttuu');
+    return;
+  }
+
+  const url = `http://localhost:3000/api/items/${itemId}`;
+
+  const options = {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: newName }),
+  };
+
+  const updated = await fetchData(url, options);
+
+  if (updated.error) {
+    console.error(updated.error);
+    alert(`Error: ${updated.error}`);
+    return;
+  }
+  console.log(updated);
+  console.log(updated.message);
+  alert(`Item updated: ${updated.item.name}`);
+
+  await getItems();
+
+  idInput.value = '';
+  nameInput.value = '';
+};
 
 
-export {getItems, getItemById, deleteItemById, addItem};
+
+export {getItems, getItemById, deleteItemById, addItem, loadItemToPutForm, updateItemById};

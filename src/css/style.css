@@ -88,6 +88,10 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  border-radius: 5px;
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
 }
 
 
