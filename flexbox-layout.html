@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+      }
+
+      #heading {
+        background-color: red;
+        height: 100px;
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+      }
+      #left {
+        background-color: rgb(199, 164, 181);
+        flex: 1;
+      }
+      #right {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+      }
+      #footer {
+        background-color: rgb(162, 162, 159);
+        color: black;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+      }
+
+      .wrapper {
+        background-color: lightpink;
+        border: 1px solid black;
+        max-width: 800px;
+        width: 100%;
+        margin: 40px;
+      }
+
+      main {
+        display: flex;
+        height: 300px;
+        gap: 20px;
+      }
+
+      #top {
+        background-color: seagreen;
+        flex: 1;
+      }
+
+      #bottom {
+        flex: 2;
+      }
+
+      #heading ul {
+        display: flex;
+        List-style-type: none;
+        justify-content: flex-start;
+
+      }
+      #heading li {
+        width: 50px;
+        background-color: bisque;
+        padding: 5px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <div id="heading">
+      <ul>
+        <li>Home</li>
+        <li>Cats</li>
+        <li>Dogs</li>
+      </ul>
+      <button>LOGIN</button>
+    </div>
+    <main>
+      <div id="left">Left</div>
+      <div id="right">
+        <div id="top">TOP</div>
+        <div id="bottom">
+          <h2>Otsikko</h2>
+          <p>Normaalisesti sisältöä tässä</p>
+        </div>
+      </div>
+    </main>
+    <div id="footer">
+      <p>Copyright by Elias</p>
+    </div>
+  </div>
+  </body>
+</html>
+

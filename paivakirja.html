@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+
+
+    <nav>
+      <ul>
+        <li><a href="" id="logo">HYTE</a></li>
+        <li>
+          <a href="#" class="Selected navlink">Koti</a>
+        </li>
+        <li>
+          <a href="bmi.html" class="navlink">BMI-laskuri</a>
+        </li>
+        <li>
+          <a href="paivakirja.html" class="navlink">Päiväkirja</a>
+        </li>
+
+      <li><form class="logIn">
+          <input type="text" id="logInName" placeholder="Käyttäjätunnus" required>
+
+          <input type="password" id="logInPassword" placeholder="Salasana" required>
+          <button type="submit" id="LogInButton">Login</button> </form> </li>
+
+        </ul>
+    </nav>
+
+    <main>
+      <h2>Tänne päiväkirja</h2>
+      <button class="get_entries">Hae päiväkirjamerkinnät</button>
+
+      <!-- Flexbox pohja johon kortit luodaan -->
+      <section class="diary-card">
+        <div class="card">
+          <h2>Otsikko</h2>
+          <p>Teksti</p>
+        </div>
+        <div class="card">
+          <h2>Otsikko</h2>
+          <p>Teksti</p>
+        </div>
+        <div class="card">
+          <h2>Otsikko</h2>
+          <p>Teksti</p>
+        </div>
+        <div class="card">
+          <h2>Otsikko</h2>
+          <p>Teksti</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>Copyright by Elias</footer>
+
+     <dialog class="diary_dialog">
+      <h2>Tässä on dialogi</h2>
+      <p>Tänne voi avata ja muokata tietoa vaikka formissa</p>
+      <div class="diary_id">ID</div>
+      <button autofocus>Close</button>
+    </dialog>
+    <script type="module" src="/src/js/diary.js"></script>
+    <script type="module" src="/src/js/login.js"></script>
+  </body>
+</html>

@@ -36,10 +36,13 @@ nav {
   box-shadow: 0 8px 16px -6px black;
   height: 100px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 nav ul {
-  padding-top: 15px;
   list-style-type: none;
 }
 
@@ -92,6 +95,10 @@ nav ul li a:hover {
   max-width: 1200px;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+dialog {
+  margin: auto;
 }
 
 
