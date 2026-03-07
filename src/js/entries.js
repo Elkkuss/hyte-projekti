@@ -11,7 +11,7 @@ const closeButton = document.querySelector('.diary_dialog button');
 closeButton.addEventListener('click', () => {
   dialog.close();
 });
-
+// hakee entryt ja luo niille kortit
 const getEntries = async (event) => {
   const url = 'http://localhost:3000/api/entries';
   let headers = {};
@@ -49,7 +49,7 @@ const getEntries = async (event) => {
     const card = document.createElement('div');
     card.classList.add('card');
     card.innerHTML = `<span>${entry.notes}</span>`;
-
+// Täytetään kortit datalla
     const cardDiary = document.createElement('div');
     cardDiary.classList.add('card-text');
     cardDiary.innerHTML = `

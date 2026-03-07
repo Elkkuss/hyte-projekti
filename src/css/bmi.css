@@ -1,6 +1,7 @@
 /*********************/
 /* BMI osion tyylittely */
 
+/* Navigaatio */
 nav {
   max-width: 1200px;
   margin: auto;
@@ -9,17 +10,20 @@ nav {
 nav {
   background-color: white;
   color: #fff;
-  padding: 0.5rem 4rem;
+  padding: 0 20px;
   font-weight: 100;
   font-size: 1.2em;
-  background-color: black;
+  background-color: rgb(131, 175, 225);
   box-shadow: 0 8px 16px -6px black;
   height: 100px;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 nav ul {
-  padding-top: 15px;
   list-style-type: none;
 }
 
@@ -30,7 +34,7 @@ a {
 nav ul li:first-child a {
   background-color: rgb(65 77 159);
 
-  background-image: linear-gradient(45deg, rgb(86, 210, 216), rgb(65 77 159));
+  background-image: linear-gradient(45deg, rgb(66, 35, 103), rgb(65 77 159));
   background-size: 100%;
   background-repeat: repeat;
   background-clip: text;
@@ -45,7 +49,7 @@ nav ul li:first-child a {
 }
 
 nav ul a {
-  color: rgb(138, 170, 198);
+  color: rgb(16, 16, 17);
   padding: 0.6rem;
   margin: 0 0.25em;
   font-size: smaller;
@@ -58,6 +62,89 @@ nav ul li {
 
 nav ul li a:hover {
   color: rgb(205, 255, 155);
+}
+
+/* Login container navissa */
+#nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e8f0ff; /* vaalea sininen teksti */
+  font-family: "Inter", sans-serif;
+}
+
+/* Login form navissa */
+#nav-auth form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.12); /* kevyt läpikuultava */
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Input-kentät */
+#nav-auth input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+#nav-auth input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Login-nappi */
+#nav-auth button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4a7bd1; /* sininen nappi */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#nav-auth button:hover {
+  background: #6a9af0;
+}
+
+/* Logout-nappi */
+#logout-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #d14a4a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#logout-btn:hover {
+  background: #f06a6a;
+}
+
+/* Tervetuloa-teksti */
+#nav-auth span {
+  font-size: smaller;
+  color: rgb(16, 16, 17);
+  padding: 0.6rem;
+  margin: 0 0.25em;
+  font-family: inherit;
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: inline;
 }
 
 .card {
@@ -115,7 +202,7 @@ a:hover {
 }
 
 tbody {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 td {
@@ -123,6 +210,7 @@ td {
   padding: 5px;
 }
 
+/* BMI-laskurin tyylit*/
 .lowBmi {
   background-color: rgb(71, 178, 210);
 }

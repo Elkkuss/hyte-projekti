@@ -9,7 +9,7 @@
   </head>
   <body>
 
-
+<!-- Navigaatio -->
     <nav>
       <ul>
         <li><a href="" id="logo">HYTE</a></li>
@@ -19,44 +19,49 @@
         <li>
           <a href="bmi.html" class="navlink">BMI-laskuri</a>
         </li>
-        <li>
-          <a href="rajapinnat-v2.html" class="navlink">Rajapinnat</a>
+        <li id="diary-link">
+          <a href="paivakirja.html" class="navlink">Päiväkirja</a>
         </li>
       </ul>
       <span class="header-links"></span>
-      <div>Hei Käyttäjä:<span class="username">Nimi tähän</span></div>
+      <div id="nav-auth"></div>
     </nav>
-
+<!-- Herokuva -->
     <div id="taustakuva"></div>
 
     <section>
-      Miten
-      <span id="lightblue">voin</span>
-      auttaa sinua
+      Tervetuloa
+      <span id="lightblue">HYTE</span>
+      projektiin!
     </section>
 
     <!-- Float continues, clearing -->
     <main>
-      <div id="laatikko1"><img src="/img/kisu.jpg" alt="kisu" class="kisu-kuva" /></div>
 
       <section class="about-us">
 
       <img
-        src="/img/lataus (1).jpg"
+        src="/img/sinilehti.png"
         alt="Metsa"
-        class="fl puut"
+        class="fl lehti"
         />
 
-      <h3>Otsikko</h3>
+      <h3>About-Us</h3>
 
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-        exercitationem quas consectetur aliquid suscipit vitae non ab id ipsa
-        nisi voluptatum aut, perferendis sequi vel dicta sunt tempora tempore
-        odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-        aliquid tenetur neque explicabo nihil velit consequuntur, deleniti hic
-        exercitationem, similique minus saepe quibusdam molestiae iure adipisci
-        iusto porro sunt cupiditate.
+        Tervetuloa Web-dev kurssin yksilöprojektin
+        sivuille jossa harjoitellaan HTML:ää, CSS:ää ja
+        JavaScriptiä. Sivut on toteutettu Vite-työkalua
+        hyödyntäen, joka mahdollistaa nopean kehityksen
+        ja modernien web-teknologioiden käytön. Projektin
+        tavoitteena on luoda responsiivinen ja
+        käyttäjäystävällinen verkkosivusto, joka esittelee
+        erilaisia web-kehityksen osa-alueita. Sivustolla
+        on useita osioita, kuten etusivu, BMI-laskuri ja
+        päiväkirja, jotka tarjoavat interaktiivisia
+        elementtejä ja hyödyllisiä työkaluja käyttäjille.
+        Tervetuloa tutustumaan projektiin ja oppimaan
+        lisää web-kehityksestä!
       </p>
       </section>
 
@@ -64,5 +69,6 @@
 
     <footer>Copyright by Elias</footer>
     <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/login.js"></script>
   </body>
 </html>

@@ -7,32 +7,64 @@
   </head>
   <body>
 
-
+<!---------------- Navigaatio ---------------->
     <nav>
       <ul>
         <li><a href="" id="logo">HYTE</a></li>
         <li>
-          <a href="#" class="Selected navlink">Koti</a>
+          <a href="index.html" class="Selected navlink">Koti</a>
         </li>
         <li>
           <a href="bmi.html" class="navlink">BMI-laskuri</a>
         </li>
         <li>
-          <a href="paivakirja.html" class="navlink">Päiväkirja</a>
+          <a href="#" class="navlink">Päiväkirja</a>
         </li>
-
-      <li><form class="logIn">
-          <input type="text" id="logInName" placeholder="Käyttäjätunnus" required>
-
-          <input type="password" id="logInPassword" placeholder="Salasana" required>
-          <button type="submit" id="LogInButton">Login</button> </form> </li>
-
-        </ul>
+      </ul>
+      <span class="header-links"></span>
+      <div id="nav-auth"></div>
     </nav>
-
+  <!-- Main sisältää napit päiväkirja merkintöjen hakuun,
+    ja lisäämiseen sekä paikat merkinnöille -->
     <main>
       <h2>Tänne päiväkirja</h2>
       <button class="get_entries">Hae päiväkirjamerkinnät</button>
+      <button id="open-entry-form">Lisää uusi merkintä</button>
+
+      <div id="entry-form-container" class="entry-form hidden">
+        <form id="new-entry-form" class="entry-form-content">
+
+          <h2>Uusi päiväkirjamerkintä</h2>
+
+          <div class="form-row">
+            <label>Päivämäärä</label>
+            <input type="date" id="entry-date" required>
+          </div>
+
+          <div class="form-row">
+            <label>Mieliala</label>
+            <input type="text" id="entry-mood" placeholder="Esim. neutraali, stressaantunut" required>
+          </div>
+
+          <div class="form-row">
+            <label>Paino (kg)</label>
+            <input type="number" id="entry-weight" step="0.1">
+          </div>
+
+          <div class="form-row">
+            <label>Uni (h)</label>
+            <input type="number" id="entry-sleep">
+          </div>
+
+          <div class="form-row">
+            <label>Muistiinpanot</label>
+            <textarea id="entry-notes" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="save-btn">Tallenna merkintä</button>
+        </form>
+      </div>
+
 
       <!-- Flexbox pohja johon kortit luodaan -->
       <section class="diary-card">

@@ -1,89 +1,258 @@
 .diary-card {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgb(228, 231, 235);
+  border-radius: 10px;
+}
+
+main {
+  background-color: rgb(131, 175, 225);
+  padding-bottom: 40px;
+  margin-top: 40px;
 }
 
 /* NAVIN PERUSILME */
 nav {
-  background: #ffffff;
-  padding: 0 30px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  font-family: "Inter", sans-serif;
+  max-width: 1200px;
+  margin-bottom: 40px;
 }
 
-/* LISTA RIVILLE */
-nav ul {
-  list-style: none;
+nav {
+  background-color: white;
+  color: #fff;
+  padding: 0 20px;
+  font-weight: 100;
+  font-size: 1.2em;
+  background-color: rgb(131, 175, 225);
+  box-shadow: 0 8px 16px -6px black;
+  height: 100px;
+  border-radius: 5px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul li:first-child a {
+  background-image: linear-gradient(45deg, rgb(66, 35, 103), rgb(65 77 159));
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: larger;
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  margin-right: 40px;
+}
+
+nav ul a {
+  color: rgb(16, 16, 17);
+  padding: 0.6rem;
+  margin: 0 0.25em;
+  font-size: smaller;
+  transition: color 0.5s;
 }
 
 nav ul li {
+  float: left;
+}
+
+nav ul li a:hover {
+  color: rgb(205, 255, 155);
+}
+
+/* Login container navissa */
+#nav-auth {
   display: flex;
   align-items: center;
+  gap: 12px;
+  color: #e8f0ff; /* vaalea sininen teksti */
+  font-family: "Inter", sans-serif;
 }
 
-/* LOGO */
-#logo {
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: #222;
-  text-decoration: none;
-  letter-spacing: 1px;
-  padding: 10px 0;
-  display: inline-block;
+/* Login form navissa */
+#nav-auth form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.12); /* kevyt läpikuultava */
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+/* Input-kentät */
+#nav-auth input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
 
-/* NAV-LINKIT */
-.navlink {
+#nav-auth input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Login-nappi */
+#nav-auth button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4a7bd1; /* sininen nappi */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#nav-auth button:hover {
+  background: #6a9af0;
+}
+
+/* Logout-nappi */
+#logout-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #d14a4a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#logout-btn:hover {
+  background: #f06a6a;
+}
+
+/* Tervetuloa-teksti */
+#nav-auth span {
+  font-size: smaller;
+  color: rgb(16, 16, 17);
+  padding: 0.6rem;
+  margin: 0 0.25em;
+  font-family: inherit;
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+
+/* Taustan tummennus */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Valkoinen laatikko keskellä */
+.entry-form {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  border: 1px solid #e5e5e5;
+}
+
+/* Piilotus */
+.hidden {
+  display: none;
+}
+
+/* Otsikko */
+.entry-form-content h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
   color: #333;
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  transition: 0.25s ease;
-  font-size: 1rem;
 }
 
-/* Hover kaikille */
-.navlink:hover,
-#logo:hover {
-  background: #f0f0f0;
-  color: #000;
-}
-
-/* LOGIN-LOMAKE */
-.logIn {
+/* Rivien rakenne */
+.form-row {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
-.logIn input {
-  padding: 8px 12px;
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 10px 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 0.9rem;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fafafa;
+  transition: border-color 0.2s, background 0.2s;
 }
 
-#LogInButton {
-  padding: 8px 16px;
-  background: #0077ff;
+/* Sininen korostusväri */
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: #4a90e2;
+  background: #fff;
+  outline: none;
+}
+
+/* Sininen tallenna-nappi */
+.save-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
-  transition: 0.25s ease;
+  font-weight: 600;
+  transition: background 0.2s;
 }
 
-#LogInButton:hover {
-  background: #005fcc;
+.save-btn:hover {
+  background: #3a78c2;
+}
+
+
+
+
+footer {
+  background-color: rgb(4, 4, 4);
+  height: 75px;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* RESPONSIVIIVISUUS */

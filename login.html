@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
+<!-- Harjoittelu login ja register formit! -->
 
   <body>
 
@@ -34,23 +35,31 @@
       <label for="username">Username</label>
       <input
         id="username"
+        minlength="3"
+        maxlength="20"
         type="text"
         name="username"
         placeholder="daisy"
+        required
       />
-      <label for="password">Password</label>
+      <label for="password">Password (min 8, isoja ja pieniä kirjaimia)</label>
       <input
         id="password"
         type="password"
         name="password"
         placeholder="duck"
+        minlength="8"
+        pattern="^(?=.*[a-zåäö])(?=.*[A-ZÅÄÖ])(?=.*[0-9]).{8,}$"
+        required
       />
-      <label for="email">Email</label>
+      <label for="email">Email (Metropolia.fi päätteinen)</label>
       <input
         id="email"
         type="email"
         name="email"
         placeholder="daisy@example.com"
+        pattern="^.*@metropolia\.fi$"
+        required
       />
       <input
         name="submit"

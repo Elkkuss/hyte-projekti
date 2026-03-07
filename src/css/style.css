@@ -1,3 +1,4 @@
+/* Yleiset tyylit */
 * {
   box-sizing: border-box;
 }
@@ -10,84 +11,155 @@ body {
   clear: both;
 }
 
-
-
-#laatikko {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(138, 170, 198);
-  border: 10px solid red;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
+/* Navigaatio **/
 nav {
   max-width: 1200px;
   margin: auto;
-}
-
-nav {
   background-color: white;
   color: #fff;
-  padding: 0.5rem 4rem;
+  padding: 0 20px;
   font-weight: 100;
   font-size: 1.2em;
-  background-color: rgb(10, 10, 12);
+  background-color: rgb(131, 175, 225);
   box-shadow: 0 8px 16px -6px black;
   height: 100px;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
+/* Navigaation linkit */
 nav ul {
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-nav ul li:first-child a {
-  background-color: rgb(65 77 159);
-
-  background-image: linear-gradient(45deg, rgb(86, 210, 216), rgb(65 77 159));
-  background-size: 100%;
-  background-repeat: repeat;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  font-size: larger;
-  font-family: "Roboto Slab", serif;
-  font-weight: 900;
-  margin-right: 40px;
-}
-
-nav ul a {
-  color: rgb(138, 170, 198);
-  padding: 0.6rem;
-  margin: 0 0.25em;
-  font-size: smaller;
-  transition: color 0.5s;
 }
 
 nav ul li {
   float: left;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* Navigaation Logo */
+nav ul li:first-child a {
+  background-image: linear-gradient(45deg, rgb(66, 35, 103), rgb(65 77 159));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: larger;
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+  margin-right: 40px;
+}
+
+/* muut Navigaation linkit */
+nav ul a {
+  color: rgb(16, 16, 17);
+  padding: 0.6rem;
+  margin: 0 0.25em;
+  font-size: smaller;
+  transition: color 0.5s;
+}
+
 nav ul li a:hover {
   color: rgb(205, 255, 155);
 }
 
+/* Login container navissa */
+#nav-auth {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e8f0ff;
+  font-family: "Inter", sans-serif;
+}
+
+/* Login form navissa */
+#nav-auth form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Input-kentät */
+#nav-auth input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+#nav-auth input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Login-nappi */
+#nav-auth button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4a7bd1;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#nav-auth button:hover {
+  background: #6a9af0;
+}
+
+/* Logout-nappi */
+#logout-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #d14a4a;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#logout-btn:hover {
+  background: #f06a6a;
+}
+
+/* Tervetuloa-teksti */
+#nav-auth span {
+  font-size: smaller;
+  color: rgb(16, 16, 17);
+  padding: 0.6rem;
+  margin: 0 0.25em;
+  font-family: inherit;
+}
+
+nav::after {
+  content: "";
+  clear: both;
+  display: inline;
+}
+
+#diary-link {
+  display: none;
+}
+
+/* Hero-kuva */
 #taustakuva {
   width: 100%;
   height: 300px;
   background-color: aliceblue;
-  background-image: url(/img/kukka.jpg);
+  background-image: url(/img/taivas.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -97,16 +169,13 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-dialog {
-  margin: auto;
-}
-
-
 section {
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
+
+/* Pääsisältö */
 main {
   background-color: rgb(11, 11, 11);
   padding: 20px;
@@ -119,49 +188,37 @@ main {
 }
 
 #lightblue {
-  color: blueviolet;
+  color: rgb(124, 176, 226);
 }
 
-
-
+/* About-sisältö*/
 .about-us {
   background-color: #f0f0f0;
-  background-image: url("../img/ranta.jpg");
+  background-image: url("../img/aboutkuva2.jpg");
   background-position: right;
   background-size: cover;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
 
 }
 
-.puut {
-  margin-right: 50px;
-  margin-bottom: 30px;
+.lehti {
+  margin: 5px 20px 20px 5px;
+  float: left;
+  width: 300px;
   max-width: 550px;
+  max-height: 150px;
   border-radius: 20px;
 }
 
-nav::after {
-  content: "";
-  clear: both;
-  display: inline;
-}
+
 main {
   position: relative;
 }
-#laatikko1 {
-  width: 100px;
-  height: 100px;
-  background-color: transparent;
-  position: absolute;
-  top: -54px;
-  right: 30px;
 
-}
-
-.kisu-kuva {
-  width: 100px;
-  height: 100px;
-}
-
+/* Footer */
 footer {
   background-color: rgb(4, 4, 4);
   height: 75px;
@@ -184,11 +241,6 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  #puut {
-    width: 100%;
-
-  }
-
   nav {
     height: 190px;
   }

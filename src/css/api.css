@@ -159,7 +159,7 @@ button.del {
 }
 
 form {
-  background-color: #009879;
+  background-color: rgb(131, 175, 225);
   color: #ffffff;
   padding: 10px;
   margin-top: 25px;
@@ -168,6 +168,7 @@ form {
   width: 300px;
   font-size: 0.9em;
   font-family: sans-serif;
+  position: center;
 }
 
 input[type='text'],
