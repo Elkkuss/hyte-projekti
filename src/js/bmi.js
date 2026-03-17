@@ -34,14 +34,14 @@ bmiForm.addEventListener("submit", (evt) => {
   // yleensä UIsta saadaan aina lähtökohtaisesti string elementti
   // Number yrittää muuntaa merkkijonon numeroksi. Jos muunnos epäonnistuu, funktio palauttaa erityisen arvon NaN (Not-a-Number).
 
-  console.log(weightInput.value);
+  // console.log(weightInput.value);
   const weight = Number(weightInput.value);
 
-  console.log(heightInput.value);
+  // console.log(heightInput.value);
   const height = Number(heightInput.value);
 
   const sum = weightInput.value + heightInput.value;
-  console.log(sum);
+  // console.log(sum);
 
   resetBMIStyles();
   calculateBMI(weight, height);
@@ -59,22 +59,22 @@ const resetBMIStyles = () => {
 // BMI:n laskenta ja analyysin päivitys
 const calculateBMI = (weight, height) => {
   const bmi = (weight / (height / 100) ** 2).toFixed(1);
-  console.log("BMI", bmi);
+  //console.log("BMI", bmi);
   // näytä sivullal laskettu BMI arvo
 
   bmiElem.textContent = bmi;
 
   // tee pieni if/else jossa bmin mukaan
   if (bmi < 18.9) {
-    console.log("alipaino");
+    //console.log("alipaino");
     document.querySelector(".bmi0-19").classList.add("lowBmi");
     analysis.textContent = lowBmi;
   } else if (bmi < 25) {
-    console.log("Nomraali paino");
+    // console.log("Nomraali paino");
     document.querySelector(".bmi19-25").classList.add("normalBmi");
     analysis.textContent = normalBmi;
   } else {
-    console.log("Ylipaino");
+    // console.log("Ylipaino");
     document.querySelector(".bmi25-30").classList.add("highBmi");
     analysis.textContent = highBmi;
   }
