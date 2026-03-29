@@ -8,4 +8,3 @@ Tehtävä 2 kirjautumis testi
 
 Tehtävä 3 Web-form dropdown (select ja datalist)
 ![alt text](image.png)
-
