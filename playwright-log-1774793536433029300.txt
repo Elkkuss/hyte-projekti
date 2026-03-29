@@ -1,0 +1,38 @@
+{"level":30,"time":"2026-03-29T14:12:18.327Z","pid":24236,"hostname":"Eliass25","msg":"Listening on 127.0.0.1:52446"}
+{"level":30,"time":"2026-03-29T14:12:18.685Z","pid":24236,"hostname":"Eliass25","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-29T14:12:19.094Z","pid":24236,"hostname":"Eliass25","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-29T14:12:19.095Z","pid":24236,"hostname":"Eliass25","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-29T14:12:19.095Z","pid":24236,"hostname":"Eliass25","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-29T14:12:19.110Z","pid":24236,"hostname":"Eliass25","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-29T14:12:19.111Z","pid":24236,"hostname":"Eliass25","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@a24b5068c9d7ff882c3f27b81fedcc05\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=560a3ef8-eaf1-4a97-8ba3-65feee5009b0\"}"}
+{"level":30,"time":"2026-03-29T14:12:19.158Z","pid":24236,"hostname":"Eliass25","msg":"Setting default timeout for context context=98aa7d4a-f312-435d-9853-73727a8c014b to 10000"}
+{"level":30,"time":"2026-03-29T14:12:19.159Z","pid":24236,"hostname":"Eliass25","msg":"Changed active context: context=98aa7d4a-f312-435d-9853-73727a8c014b"}
+{"level":30,"time":"2026-03-29T14:12:19.468Z","pid":24236,"hostname":"Eliass25","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-29T14:12:19.468Z","pid":24236,"hostname":"Eliass25","msg":"Changed active page"}
+{"level":30,"time":"2026-03-29T14:12:20.230Z","pid":24236,"hostname":"Eliass25","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-29T14:12:20.298Z","pid":24236,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-29T14:12:20.299Z","pid":24236,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2026-03-29T14:12:21.372Z","pid":24236,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-29T14:12:21.378Z","pid":24236,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-29T14:12:21.378Z","pid":24236,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2026-03-29T14:12:22.511Z","pid":24236,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-29T14:12:22.518Z","pid":24236,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-29T14:12:22.518Z","pid":24236,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2026-03-29T14:12:27.147Z","pid":24236,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-29T14:12:27.154Z","pid":24236,"hostname":"Eliass25","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-03-29T14:12:27.155Z","pid":24236,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=select in page."}
+{"level":30,"time":"2026-03-29T14:12:37.171Z","pid":24236,"hostname":"Eliass25","msg":"Error of node method  selectOption"}
+================= Original suppressed error =================
+locator.selectOption: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('id=select')[22m
+
+    at selectOption (C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12260:32)
+    at async PlaywrightServer.selectOption (C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-03-29T14:12:37.180Z","pid":24236,"hostname":"Eliass25","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-03-29T14:12:37.180Z","pid":24236,"hostname":"Eliass25","Take screenshot with options: ":{"path":"C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-03-29T14:12:37.345Z","pid":24236,"hostname":"Eliass25","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-03-29T14:13:00.744Z","pid":24236,"hostname":"Eliass25","msg":"Removed page=b9b54abe-ee8d-45e3-a8c6-e0c5347c97d3 from context=98aa7d4a-f312-435d-9853-73727a8c014b page stack"}
