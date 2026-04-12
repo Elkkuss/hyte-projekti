@@ -3,7 +3,7 @@ import '../css/diary-card.css';
 
 import {getEntries} from './entries.js';
 
-
+document.addEventListener("DOMContentLoaded", () => {
 // Etsii get_entries napin
 const getEntriesBtn = document.querySelector('.get_entries');
 getEntriesBtn.addEventListener('click', getEntries);
@@ -12,7 +12,7 @@ getEntriesBtn.addEventListener('click', getEntries);
 // avaa ja sulkee formin
 document.getElementById("open-entry-form").addEventListener("click", () => {
   const form = document.getElementById("entry-form-container");
-  form.style.display = form.style.display === "none" ? "block" : "none";
+  form.classList.toggle("hidden");
 });
 
 // Lähettää uuden merkinnän backendille
@@ -41,7 +41,7 @@ document.getElementById("new-entry-form").addEventListener("submit", async (e) =
   });
 
   if (response.ok) {
-    alert("Merkintä lisätty!");
+  //  alert("Merkintä lisätty!");
 
     // Tyhjennä formi
     e.target.reset();
@@ -56,3 +56,4 @@ document.getElementById("new-entry-form").addEventListener("submit", async (e) =
   }
 });
 
+});

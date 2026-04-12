@@ -1,16 +1,16 @@
-{"level":30,"time":"2026-03-29T14:03:09.576Z","pid":36776,"hostname":"Eliass25","msg":"Listening on 127.0.0.1:54240"}
-{"level":30,"time":"2026-03-29T14:03:09.915Z","pid":36776,"hostname":"Eliass25","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2026-03-29T14:03:11.234Z","pid":36776,"hostname":"Eliass25","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
-{"level":30,"time":"2026-03-29T14:03:11.235Z","pid":36776,"hostname":"Eliass25","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2026-03-29T14:03:11.235Z","pid":36776,"hostname":"Eliass25","msg":"End of node method newBrowser"}
-{"level":30,"time":"2026-03-29T14:03:11.244Z","pid":36776,"hostname":"Eliass25","msg":"Start of node method newPage"}
-{"level":30,"time":"2026-03-29T14:03:11.245Z","pid":36776,"hostname":"Eliass25","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@44c58577f8e4d011f3cc3b4eca6fd96c\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=35b53899-5351-46c6-a732-0bd4830ce181\"}"}
-{"level":30,"time":"2026-03-29T14:03:11.284Z","pid":36776,"hostname":"Eliass25","msg":"Setting default timeout for context context=f397aabf-ffb8-4ecc-8ebc-3759103f02a4 to 10000"}
-{"level":30,"time":"2026-03-29T14:03:11.284Z","pid":36776,"hostname":"Eliass25","msg":"Changed active context: context=f397aabf-ffb8-4ecc-8ebc-3759103f02a4"}
-{"level":30,"time":"2026-03-29T14:03:11.515Z","pid":36776,"hostname":"Eliass25","msg":"Video path: undefined"}
-{"level":30,"time":"2026-03-29T14:03:11.515Z","pid":36776,"hostname":"Eliass25","msg":"Changed active page"}
-{"level":30,"time":"2026-03-29T14:03:12.016Z","pid":36776,"hostname":"Eliass25","msg":"End of node method newPage"}
-{"level":30,"time":"2026-03-29T14:03:12.040Z","pid":36776,"hostname":"Eliass25","msg":"Start of node method getElement"}
-{"level":30,"time":"2026-03-29T14:03:12.040Z","pid":36776,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-login-form in page."}
-{"level":30,"time":"2026-03-29T14:03:12.077Z","pid":36776,"hostname":"Eliass25","msg":"End of node method getElement"}
-{"level":30,"time":"2026-03-29T14:06:33.991Z","pid":36776,"hostname":"Eliass25","msg":"Removed page=f28c8752-2f3d-4143-aced-b7825f1997e3 from context=f397aabf-ffb8-4ecc-8ebc-3759103f02a4 page stack"}
+{"level":30,"time":"2026-04-05T09:04:19.348Z","pid":18368,"hostname":"Eliass25","msg":"Listening on 127.0.0.1:57263"}
+{"level":30,"time":"2026-04-05T09:04:19.878Z","pid":18368,"hostname":"Eliass25","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-05T09:04:21.300Z","pid":18368,"hostname":"Eliass25","msg":"Adding browser to stack: chromium, version: 147.0.7727.15"}
+{"level":30,"time":"2026-04-05T09:04:21.301Z","pid":18368,"hostname":"Eliass25","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-05T09:04:21.301Z","pid":18368,"hostname":"Eliass25","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-05T09:04:21.325Z","pid":18368,"hostname":"Eliass25","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-05T09:04:21.326Z","pid":18368,"hostname":"Eliass25","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4cf8f6ae99b03ff9b15f0135e1ed1abd\"},\"name\":\"chromium\",\"id\":\"browser=5c820d15-7672-4767-a3a8-ae8ba0d88578\",\"headless\":false}"}
+{"level":30,"time":"2026-04-05T09:04:21.349Z","pid":18368,"hostname":"Eliass25","msg":"Setting default timeout for context context=ec1e9785-0cb6-4ad0-ab55-edb6e4b1e6f2 to 10000"}
+{"level":30,"time":"2026-04-05T09:04:21.350Z","pid":18368,"hostname":"Eliass25","msg":"Changed active context: context=ec1e9785-0cb6-4ad0-ab55-edb6e4b1e6f2"}
+{"level":30,"time":"2026-04-05T09:04:21.541Z","pid":18368,"hostname":"Eliass25","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-05T09:04:21.542Z","pid":18368,"hostname":"Eliass25","msg":"Changed active page"}
+{"level":30,"time":"2026-04-05T09:04:21.685Z","pid":18368,"hostname":"Eliass25","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-05T09:04:22.705Z","pid":18368,"hostname":"Eliass25","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-04-05T09:04:22.706Z","pid":18368,"hostname":"Eliass25","Take screenshot with options: ":{"path":"C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-04-05T09:04:22.803Z","pid":18368,"hostname":"Eliass25","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-04-05T09:04:39.106Z","pid":18368,"hostname":"Eliass25","msg":"Removed page=a1c68665-926d-4468-9fb1-c3bcc19f914d from context=ec1e9785-0cb6-4ad0-ab55-edb6e4b1e6f2 page stack"}

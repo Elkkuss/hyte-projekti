@@ -1,0 +1,19 @@
+{"level":30,"time":"2026-03-29T14:05:54.284Z","pid":29256,"hostname":"Eliass25","msg":"Listening on 127.0.0.1:55547"}
+{"level":30,"time":"2026-03-29T14:05:54.649Z","pid":29256,"hostname":"Eliass25","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-29T14:05:55.040Z","pid":29256,"hostname":"Eliass25","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-29T14:05:55.041Z","pid":29256,"hostname":"Eliass25","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-29T14:05:55.041Z","pid":29256,"hostname":"Eliass25","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-29T14:05:55.052Z","pid":29256,"hostname":"Eliass25","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-29T14:05:55.053Z","pid":29256,"hostname":"Eliass25","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@c558cfa4cfe3b1f65bcb8af94ec824aa\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=0710b14e-799d-4d82-8bbc-c81f2fc8638c\"}"}
+{"level":30,"time":"2026-03-29T14:05:55.090Z","pid":29256,"hostname":"Eliass25","msg":"Setting default timeout for context context=6019faf3-f322-4b1c-8920-9ad6368903e5 to 10000"}
+{"level":30,"time":"2026-03-29T14:05:55.091Z","pid":29256,"hostname":"Eliass25","msg":"Changed active context: context=6019faf3-f322-4b1c-8920-9ad6368903e5"}
+{"level":30,"time":"2026-03-29T14:05:55.369Z","pid":29256,"hostname":"Eliass25","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-29T14:05:55.370Z","pid":29256,"hostname":"Eliass25","msg":"Changed active page"}
+{"level":30,"time":"2026-03-29T14:05:55.513Z","pid":29256,"hostname":"Eliass25","msg":"End of node method newPage"}
+{"level":30,"time":"2026-03-29T14:05:55.540Z","pid":29256,"hostname":"Eliass25","msg":"Start of node method getElement"}
+{"level":30,"time":"2026-03-29T14:05:55.541Z","pid":29256,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-login-form in page."}
+{"level":30,"time":"2026-03-29T14:05:55.575Z","pid":29256,"hostname":"Eliass25","msg":"End of node method getElement"}
+{"level":30,"time":"2026-03-29T14:05:55.582Z","pid":29256,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-03-29T14:05:55.582Z","pid":29256,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-username in page."}
+{"level":30,"time":"2026-03-29T14:05:55.663Z","pid":29256,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-03-29T14:06:40.884Z","pid":29256,"hostname":"Eliass25","msg":"Removed page=8e78dd83-7873-4daf-95b0-1ca23f1d8749 from context=6019faf3-f322-4b1c-8920-9ad6368903e5 page stack"}

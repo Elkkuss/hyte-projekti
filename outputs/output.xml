@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-04-12T13:16:35.154475" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\tests">
+<suite id="s1-s1" name="Browser Demo" source="C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\tests\browser_demo.robot">
+<test id="s1-s1-t1" name="Complete Selenium Web Form Demo" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-12T13:16:36.101709" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\outputs\\browser\\traces\\temp\\71a60b3f-49c3-44a2-9332-e2ed0ee7431b"}</msg>
+<msg time="2026-04-12T13:16:36.138020" level="INFO">Starting Browser process C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:62391</msg>
+<msg time="2026-04-12T13:16:39.281249" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\outputs\\browser\\traces\\temp\\71a60b3f-49c3-44a2-9332-e2ed0ee7431b"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-12T13:16:36.099500" elapsed="3.182209"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-12T13:16:40.128959" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2026-04-12T13:16:40.129059" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2026-04-12T13:16:39.282893" elapsed="0.846441"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-12T13:16:40.130883" level="INFO">Types the text 'testiuser' in the given field.</msg>
+<arg>[name="my-text"]</arg>
+<arg>${username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-12T13:16:40.129809" elapsed="1.079380"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>[name="my-password"]</arg>
+<arg>$password</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2026-04-12T13:16:41.209686" elapsed="1.137197"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-12T13:16:42.349094" level="INFO">Types the text 'Hello, Robot Framework!
+How are you today?' in the given field.</msg>
+<arg>[name="my-textarea"]</arg>
+<arg>${message}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-12T13:16:42.347675" elapsed="4.608893"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2026-04-12T13:16:46.966950" level="INFO">Waited for Element with selector [name="my-select"] at state visible</msg>
+<arg>[name="my-select"]</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2026-04-12T13:16:46.957038" elapsed="0.010077"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2026-04-12T13:16:46.968856" level="INFO">Selects the option(s) 2 by attribute SelectAttribute.value from element [name="my-select"].</msg>
+<arg>[name="my-select"]</arg>
+<arg>value</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2026-04-12T13:16:46.967498" elapsed="0.039266"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2026-04-12T13:16:47.008596" level="INFO">Types the text 'San Francisco' in the given field.</msg>
+<arg>[name="my-datalist"]</arg>
+<arg>San Francisco</arg>
+<arg>delay=0.2 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2026-04-12T13:16:47.007316" elapsed="2.780591"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2026-04-12T13:16:49.789040" level="INFO">Clicks the element '[name="my-check-1"]'.</msg>
+<msg time="2026-04-12T13:16:59.901900" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-12T13:16:59.902092" level="INFO">See also file:///C:/Users/elkku/OneDrive/Tiedostot/Web-Dev/front-end/hyte-projekti/outputs/playwright-log.txt for additional details.</msg>
+<msg time="2026-04-12T13:16:59.902619" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[name="my-check-1"]')
+</msg>
+<arg>[name="my-check-1"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="FAIL" start="2026-04-12T13:16:49.788289" elapsed="10.264105">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[name="my-check-1"]')
+</status>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>id=my-radio</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:00.052935" elapsed="0.000321"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=my-date</arg>
+<arg>2024-12-24</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:00.053739" elapsed="0.000340"/>
+</kw>
+<kw name="Set Input Files">
+<arg>id=my-file</arg>
+<arg>C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\tests/testfile.txt</arg>
+<status status="NOT RUN" start="2026-04-12T13:17:00.054511" elapsed="0.000301"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:00.055144" elapsed="0.000240"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=h1</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:00.055721" elapsed="0.000234"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<var>${header}</var>
+<arg>css=h1</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:00.056310" elapsed="0.000321"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Tulossivun otsikko: ${header}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:00.057036" elapsed="0.000320"/>
+</kw>
+<msg time="2026-04-12T13:17:00.078371" level="INFO">Switching context to context=e7f0265f-8b4e-4112-a6ce-10a4723f9c49 in CURRENT</msg>
+<msg time="2026-04-12T13:17:00.087370" level="INFO">Successfully changed active context: context=e7f0265f-8b4e-4112-a6ce-10a4723f9c49</msg>
+<msg time="2026-04-12T13:17:00.117876" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-04-12T13:16:36.098285" elapsed="23.959507">TimeoutError: locator.click: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('[name="my-check-1"]')
+</status>
+</test>
+<status status="FAIL" start="2026-04-12T13:16:35.249649" elapsed="24.869661"/>
+</suite>
+<suite id="s1-s2" name="Diary Demo" source="C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\tests\diary_demo.robot">
+<test id="s1-s2-t1" name="Add New Diary Entry" line="15">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-04-12T13:17:00.252046" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\outputs\\browser\\traces\\temp\\bdd80186-2657-416d-9193-a7b552ca684c"}</msg>
+<msg time="2026-04-12T13:17:00.296092" level="INFO">Starting Browser process C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:62662</msg>
+<msg time="2026-04-12T13:17:02.123612" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\outputs\\browser\\traces\\temp\\bdd80186-2657-416d-9193-a7b552ca684c"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-04-12T13:17:00.250199" elapsed="1.873737"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-04-12T13:17:04.785642" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-04-12T13:17:04.785792" level="INFO">See also file:///C:/Users/elkku/OneDrive/Tiedostot/Web-Dev/front-end/hyte-projekti/outputs/playwright-log-1775989020133669100.txt for additional details.</msg>
+<msg time="2026-04-12T13:17:04.785991" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/paivakirja.html
+Call log:
+  - navigating to "http://localhost:5173/paivakirja.html", waiting until "load"
+</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2026-04-12T13:17:02.126053" elapsed="2.702334">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/paivakirja.html
+Call log:
+  - navigating to "http://localhost:5173/paivakirja.html", waiting until "load"
+</status>
+</kw>
+<kw name="Get Title" owner="Browser">
+<arg>contains</arg>
+<arg>Positioning Items</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.836631" elapsed="0.000491"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=nav-username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.838126" elapsed="0.000415"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=nav-password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.839280" elapsed="0.000454"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<arg>document.querySelector('#nav-login-form').requestSubmit()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.842558" elapsed="0.000642"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>id=open-entry-form</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.844848" elapsed="0.000432"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>id=entry-form-container</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.846895" elapsed="0.000546"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>id=entry-date</arg>
+<arg>${DATE}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.848706" elapsed="0.000426"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>id=entry-mood</arg>
+<arg>${MOOD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.850446" elapsed="0.000719"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>id=entry-weight</arg>
+<arg>${WEIGHT}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.852581" elapsed="0.000392"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>id=entry-sleep</arg>
+<arg>${SLEEP}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.855088" elapsed="0.000562"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<arg>id=entry-notes</arg>
+<arg>${NOTES}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.856812" elapsed="0.000451"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=.save-btn</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.857858" elapsed="0.000434"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>id=entry-form-container</arg>
+<arg>hidden</arg>
+<arg>timeout=3s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-04-12T13:17:04.859420" elapsed="0.000415"/>
+</kw>
+<status status="FAIL" start="2026-04-12T13:17:00.248789" elapsed="4.612903">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:5173/paivakirja.html
+Call log:
+  - navigating to "http://localhost:5173/paivakirja.html", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2026-04-12T13:17:00.127061" elapsed="4.741586"/>
+</suite>
+<status status="FAIL" start="2026-04-12T13:16:35.157534" elapsed="29.717026"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="2" skip="0">Tests</stat>
+<stat name="Browser Demo" id="s1-s1" pass="0" fail="1" skip="0">Tests.Browser Demo</stat>
+<stat name="Diary Demo" id="s1-s2" pass="0" fail="1" skip="0">Tests.Diary Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

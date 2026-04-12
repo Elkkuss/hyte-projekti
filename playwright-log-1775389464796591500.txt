@@ -1,0 +1,19 @@
+{"level":30,"time":"2026-04-05T11:44:25.867Z","pid":31784,"hostname":"Eliass25","msg":"Listening on 127.0.0.1:58610"}
+{"level":30,"time":"2026-04-05T11:44:25.947Z","pid":31784,"hostname":"Eliass25","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-05T11:44:26.190Z","pid":31784,"hostname":"Eliass25","msg":"Adding browser to stack: chromium, version: 147.0.7727.15"}
+{"level":30,"time":"2026-04-05T11:44:26.191Z","pid":31784,"hostname":"Eliass25","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-05T11:44:26.191Z","pid":31784,"hostname":"Eliass25","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-05T11:44:26.204Z","pid":31784,"hostname":"Eliass25","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-05T11:44:26.205Z","pid":31784,"hostname":"Eliass25","msg":"currentBrowser: {\"_contextStack\":[],\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@8c5954119772c347b0fe63191450fcfd\"},\"name\":\"chromium\",\"id\":\"browser=ce97bfc4-963d-47bd-98df-3119145db9cd\",\"headless\":false}"}
+{"level":30,"time":"2026-04-05T11:44:26.239Z","pid":31784,"hostname":"Eliass25","msg":"Setting default timeout for context context=ae1f9073-7b88-458e-9cac-5a490c7b8dcd to 10000"}
+{"level":30,"time":"2026-04-05T11:44:26.239Z","pid":31784,"hostname":"Eliass25","msg":"Changed active context: context=ae1f9073-7b88-458e-9cac-5a490c7b8dcd"}
+{"level":30,"time":"2026-04-05T11:44:26.424Z","pid":31784,"hostname":"Eliass25","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-05T11:44:26.424Z","pid":31784,"hostname":"Eliass25","msg":"Changed active page"}
+{"level":30,"time":"2026-04-05T11:44:26.510Z","pid":31784,"hostname":"Eliass25","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-05T11:44:26.532Z","pid":31784,"hostname":"Eliass25","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-05T11:44:26.532Z","pid":31784,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-username in page."}
+{"level":30,"time":"2026-04-05T11:44:26.567Z","pid":31784,"hostname":"Eliass25","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-05T11:44:26.571Z","pid":31784,"hostname":"Eliass25","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-05T11:44:26.571Z","pid":31784,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-password in page."}
+{"level":30,"time":"2026-04-05T11:44:26.583Z","pid":31784,"hostname":"Eliass25","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-05T11:46:10.893Z","pid":31784,"hostname":"Eliass25","msg":"Removed page=d628f046-b3c2-450d-a1b3-d95813b3e9f5 from context=ae1f9073-7b88-458e-9cac-5a490c7b8dcd page stack"}

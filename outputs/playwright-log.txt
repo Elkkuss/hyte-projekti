@@ -1,0 +1,67 @@
+{"level":30,"time":"2026-04-12T10:16:38.178Z","pid":15976,"hostname":"Eliass25","msg":"Listening on 127.0.0.1:62391"}
+{"level":30,"time":"2026-04-12T10:16:38.213Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-12T10:16:39.276Z","pid":15976,"hostname":"Eliass25","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-12T10:16:39.277Z","pid":15976,"hostname":"Eliass25","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-12T10:16:39.277Z","pid":15976,"hostname":"Eliass25","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-12T10:16:39.286Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-12T10:16:39.287Z","pid":15976,"hostname":"Eliass25","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@4ecad3a8992cc74ae66908ea2ec31f9b\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=8d3df620-cb11-410a-aecd-44a8286cb561\"}"}
+{"level":30,"time":"2026-04-12T10:16:39.320Z","pid":15976,"hostname":"Eliass25","msg":"Setting default timeout for context context=e7f0265f-8b4e-4112-a6ce-10a4723f9c49 to 10000"}
+{"level":30,"time":"2026-04-12T10:16:39.321Z","pid":15976,"hostname":"Eliass25","msg":"Changed active context: context=e7f0265f-8b4e-4112-a6ce-10a4723f9c49"}
+{"level":30,"time":"2026-04-12T10:16:39.522Z","pid":15976,"hostname":"Eliass25","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-12T10:16:39.522Z","pid":15976,"hostname":"Eliass25","msg":"Changed active page"}
+{"level":30,"time":"2026-04-12T10:16:40.126Z","pid":15976,"hostname":"Eliass25","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-12T10:16:40.132Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-12T10:16:40.132Z","pid":15976,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2026-04-12T10:16:41.206Z","pid":15976,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-12T10:16:41.211Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-12T10:16:41.211Z","pid":15976,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2026-04-12T10:16:42.344Z","pid":15976,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-12T10:16:42.350Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-12T10:16:42.350Z","pid":15976,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2026-04-12T10:16:46.954Z","pid":15976,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-12T10:16:46.958Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-12T10:16:46.958Z","pid":15976,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-04-12T10:16:46.964Z","pid":15976,"hostname":"Eliass25","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-12T10:16:46.969Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method selectOption"}
+{"level":30,"time":"2026-04-12T10:16:46.969Z","pid":15976,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2026-04-12T10:16:47.003Z","pid":15976,"hostname":"Eliass25","msg":"Option entries: 4"}
+{"level":30,"time":"2026-04-12T10:16:47.003Z","pid":15976,"hostname":"Eliass25","msg":"Selected entries: 1"}
+{"level":30,"time":"2026-04-12T10:16:47.003Z","pid":15976,"hostname":"Eliass25","msg":"End of node method selectOption"}
+{"level":30,"time":"2026-04-12T10:16:47.009Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-12T10:16:47.009Z","pid":15976,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2026-04-12T10:16:49.785Z","pid":15976,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-12T10:16:49.789Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-12T10:16:49.789Z","pid":15976,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with [name=\"my-check-1\"] in page."}
+{"level":30,"time":"2026-04-12T10:16:59.800Z","pid":15976,"hostname":"Eliass25","msg":"Error of node method  click"}
+================= Original suppressed error =================
+locator.click: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[name="my-check-1"]')[22m
+
+    at internalClick (C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12341:19)
+    at async click (C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:12322:18)
+    at async PlaywrightServer.click (C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-04-12T10:16:59.807Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-04-12T10:16:59.807Z","pid":15976,"hostname":"Eliass25","Take screenshot with options: ":{"path":"C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\outputs\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-04-12T10:16:59.899Z","pid":15976,"hostname":"Eliass25","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-04-12T10:17:00.062Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.065Z","pid":15976,"hostname":"Eliass25","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.068Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.070Z","pid":15976,"hostname":"Eliass25","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.072Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.075Z","pid":15976,"hostname":"Eliass25","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.079Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.081Z","pid":15976,"hostname":"Eliass25","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.083Z","pid":15976,"hostname":"Eliass25","msg":"Changed active context: context=e7f0265f-8b4e-4112-a6ce-10a4723f9c49"}
+{"level":30,"time":"2026-04-12T10:17:00.083Z","pid":15976,"hostname":"Eliass25","msg":"Changing current active page: page=70e3357f-589c-48fe-a3c2-af41688b2de1"}
+{"level":30,"time":"2026-04-12T10:17:00.083Z","pid":15976,"hostname":"Eliass25","msg":"Changed active page"}
+{"level":30,"time":"2026-04-12T10:17:00.087Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-04-12T10:17:00.110Z","pid":15976,"hostname":"Eliass25","msg":"Removed page=fefb3848-1097-4a85-90dc-c70ea541dafe from context=e7f0265f-8b4e-4112-a6ce-10a4723f9c49 page stack"}
+{"level":30,"time":"2026-04-12T10:17:00.115Z","pid":15976,"hostname":"Eliass25","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-04-12T10:17:00.122Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:00.123Z","pid":15976,"hostname":"Eliass25","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-04-12T10:17:06.066Z","pid":15976,"hostname":"Eliass25","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-04-12T10:17:06.456Z","pid":15976,"hostname":"Eliass25","msg":"End of node method closeAllBrowsers"}
