@@ -16,6 +16,9 @@ Tehtävä 2 kirjautumis testi
 Tehtävä 3 Web-form dropdown (select ja datalist)
 ![alt text](image.png)
 
+Tehtävä 4 Päiväkirja merkintä
+![alt text](image-2.png)
+
 Tehtävä 7 Lokit
 - [Testiraportit](outputs/)
 

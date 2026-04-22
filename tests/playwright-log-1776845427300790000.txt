@@ -1,0 +1,65 @@
+{"level":30,"time":"2026-04-22T08:10:30.553Z","pid":12600,"hostname":"Eliass25","msg":"Listening on 127.0.0.1:63644"}
+{"level":30,"time":"2026-04-22T08:10:30.793Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-22T08:10:31.329Z","pid":12600,"hostname":"Eliass25","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-22T08:10:31.330Z","pid":12600,"hostname":"Eliass25","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-22T08:10:31.330Z","pid":12600,"hostname":"Eliass25","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-22T08:10:31.344Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-22T08:10:31.345Z","pid":12600,"hostname":"Eliass25","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@917bfb6e3e387abc051ff9136e6e49bc\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=2a62b966-2883-445d-b11e-6da7cb5594ab\"}"}
+{"level":30,"time":"2026-04-22T08:10:31.395Z","pid":12600,"hostname":"Eliass25","msg":"Setting default timeout for context context=08bf0bd6-ef4e-42f8-a710-9489386acd80 to 10000"}
+{"level":30,"time":"2026-04-22T08:10:31.396Z","pid":12600,"hostname":"Eliass25","msg":"Changed active context: context=08bf0bd6-ef4e-42f8-a710-9489386acd80"}
+{"level":30,"time":"2026-04-22T08:10:31.787Z","pid":12600,"hostname":"Eliass25","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-22T08:10:31.787Z","pid":12600,"hostname":"Eliass25","msg":"Changed active page"}
+{"level":30,"time":"2026-04-22T08:10:31.976Z","pid":12600,"hostname":"Eliass25","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-22T08:10:31.989Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:31.990Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-login-form in page."}
+{"level":30,"time":"2026-04-22T08:10:32.060Z","pid":12600,"hostname":"Eliass25","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:32.070Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-22T08:10:32.070Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-username in page."}
+{"level":30,"time":"2026-04-22T08:10:32.195Z","pid":12600,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-22T08:10:32.204Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-22T08:10:32.204Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-password in page."}
+{"level":30,"time":"2026-04-22T08:10:32.276Z","pid":12600,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-22T08:10:32.285Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-22T08:10:32.285Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with xpath=//form[@id='nav-login-form']//button[@type='submit'] in page."}
+{"level":30,"time":"2026-04-22T08:10:32.536Z","pid":12600,"hostname":"Eliass25","msg":"End of node method click"}
+{"level":30,"time":"2026-04-22T08:10:32.544Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:32.544Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with xpath=//span[contains(.,'Tervetuloa')] in page."}
+{"level":30,"time":"2026-04-22T08:10:33.382Z","pid":12600,"hostname":"Eliass25","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:33.392Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method getText"}
+{"level":30,"time":"2026-04-22T08:10:33.392Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with xpath=//span[contains(.,'Tervetuloa')] in page."}
+{"level":30,"time":"2026-04-22T08:10:33.469Z","pid":12600,"hostname":"Eliass25","msg":"Retrieved text for element xpath=//span[contains(.,'Tervetuloa')] containing Tervetuloa: testiuser"}
+{"level":30,"time":"2026-04-22T08:10:33.469Z","pid":12600,"hostname":"Eliass25","msg":"End of node method getText"}
+{"level":30,"time":"2026-04-22T08:10:33.481Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:33.482Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=diary-link in page."}
+{"level":30,"time":"2026-04-22T08:10:33.489Z","pid":12600,"hostname":"Eliass25","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:33.496Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-22T08:10:33.496Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=diary-link in page."}
+{"level":30,"time":"2026-04-22T08:10:33.673Z","pid":12600,"hostname":"Eliass25","msg":"End of node method click"}
+{"level":30,"time":"2026-04-22T08:10:33.683Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:33.683Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with text=Lisää uusi merkintä in page."}
+{"level":30,"time":"2026-04-22T08:10:33.734Z","pid":12600,"hostname":"Eliass25","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:33.743Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-22T08:10:33.743Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with text=Lisää uusi merkintä in page."}
+{"level":30,"time":"2026-04-22T08:10:34.093Z","pid":12600,"hostname":"Eliass25","msg":"End of node method click"}
+{"level":30,"time":"2026-04-22T08:10:34.099Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:34.100Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with text=Päivämäärä in page."}
+{"level":30,"time":"2026-04-22T08:10:34.106Z","pid":12600,"hostname":"Eliass25","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T08:10:34.116Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.116Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with input[name=\"entry-date\"] in page."}
+{"level":30,"time":"2026-04-22T08:10:34.135Z","pid":12600,"hostname":"Eliass25","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.143Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.143Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with input[name=\"entry-mood\"] in page."}
+{"level":30,"time":"2026-04-22T08:10:34.163Z","pid":12600,"hostname":"Eliass25","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.169Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.169Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with input[name=\"entry-weight\"] in page."}
+{"level":30,"time":"2026-04-22T08:10:34.192Z","pid":12600,"hostname":"Eliass25","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.201Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.201Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with input[name=\"entry-sleep\"] in page."}
+{"level":30,"time":"2026-04-22T08:10:34.223Z","pid":12600,"hostname":"Eliass25","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.231Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.231Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with textarea[name=\"entry-notes\"] in page."}
+{"level":30,"time":"2026-04-22T08:10:34.257Z","pid":12600,"hostname":"Eliass25","msg":"End of node method fillText"}
+{"level":30,"time":"2026-04-22T08:10:34.266Z","pid":12600,"hostname":"Eliass25","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-22T08:10:34.266Z","pid":12600,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with text=Tallenna in page."}
+{"level":30,"time":"2026-04-22T08:10:34.330Z","pid":12600,"hostname":"Eliass25","msg":"End of node method click"}
+{"level":30,"time":"2026-04-22T08:17:18.606Z","pid":12600,"hostname":"Eliass25","msg":"Removed page=fda11b9b-4789-4870-8806-e71dd3d96550 from context=08bf0bd6-ef4e-42f8-a710-9489386acd80 page stack"}

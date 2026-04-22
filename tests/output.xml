@@ -1,168 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-03-29T17:45:27.279925" rpa="false" schemaversion="5">
-<suite id="s1" name="Browser Demo" source="C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\browser_demo.robot">
-<test id="s1-t1" name="Complete Selenium Web Form Demo" line="6">
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-04-22T11:19:41.008983" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Env" source="C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\tests\login_env.robot">
+<test id="s1-t1" name="Login With Env Credentials" line="6">
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2026-04-22T11:19:42.020430" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\tests\.env"&gt;C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\tests\.env&lt;/a&gt;'.</msg>
+<msg time="2026-04-22T11:19:42.042733" level="INFO">${env} = TEST_USERNAME=testiuser
+TEST_PASSWORD=testisalis
+</msg>
+<var>${env}</var>
+<arg>.env</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2026-04-22T11:19:42.019157" elapsed="0.023706"/>
+</kw>
+<kw name="Split To Lines">
+<msg time="2026-04-22T11:19:42.048074" level="FAIL">No keyword with name 'Split To Lines' found.</msg>
+<var>${lines}</var>
+<arg>${env}</arg>
+<status status="FAIL" start="2026-04-22T11:19:42.047543" elapsed="0.000674">No keyword with name 'Split To Lines' found.</status>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Split String">
+<var>${parts}</var>
+<arg>${line}</arg>
+<arg>=</arg>
+<status status="NOT RUN" start="2026-04-22T11:19:42.051500" elapsed="0.000486"/>
+</kw>
+<kw name="Set Suite Variable" owner="BuiltIn">
+<arg>${${parts}[0]}</arg>
+<arg>${${parts}[1]}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<status status="NOT RUN" start="2026-04-22T11:19:42.052807" elapsed="0.000601"/>
+</kw>
+<var name="${line}"/>
+<status status="NOT RUN" start="2026-04-22T11:19:42.050593" elapsed="0.004660"/>
+</iter>
+<var>${line}</var>
+<value>@{lines}</value>
+<status status="NOT RUN" start="2026-04-22T11:19:42.049065" elapsed="0.006640"/>
+</for>
 <kw name="New Browser" owner="Browser">
-<msg time="2026-03-29T17:45:27.860763" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\browser\\traces\\temp\\2910de62-3756-4c99-b279-4096d9af0433"}</msg>
-<msg time="2026-03-29T17:45:27.912712" level="INFO">Starting Browser process C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61926</msg>
-<msg time="2026-03-29T17:45:30.364668" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\browser\\traces\\temp\\2910de62-3756-4c99-b279-4096d9af0433"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-03-29T17:45:27.859384" elapsed="2.505777"/>
+<status status="NOT RUN" start="2026-04-22T11:19:42.056850" elapsed="0.000563"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-03-29T17:45:31.303932" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
-<msg time="2026-03-29T17:45:31.304106" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<arg>http://localhost:5174/index.html</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-03-29T17:45:30.366488" elapsed="0.938122"/>
+<status status="NOT RUN" start="2026-04-22T11:19:42.058296" elapsed="0.000442"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>id=nav-login-form</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-04-22T11:19:42.059570" elapsed="0.000563"/>
 </kw>
 <kw name="Type Text" owner="Browser">
-<msg time="2026-03-29T17:45:31.307519" level="INFO">Types the text 'testiuser' in the given field.</msg>
-<arg>[name="my-text"]</arg>
-<arg>${username}</arg>
-<arg>delay=0.1 s</arg>
+<arg>id=nav-username</arg>
+<arg>${TEST_USERNAME}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T17:45:31.305552" elapsed="1.095861"/>
+<status status="NOT RUN" start="2026-04-22T11:19:42.060835" elapsed="0.000470"/>
 </kw>
 <kw name="Type Secret" owner="Browser">
-<arg>[name="my-password"]</arg>
-<arg>$password</arg>
-<arg>delay=0.1 s</arg>
+<arg>id=nav-password</arg>
+<arg>${TEST_PASSWORD}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Types the given secret from ``variable_name`` into the text field
 found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T17:45:32.401975" elapsed="1.122865"/>
+<status status="NOT RUN" start="2026-04-22T11:19:42.062018" elapsed="0.000621"/>
 </kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2026-03-29T17:45:33.526599" level="INFO">Types the text 'Hello, Robot Framework!
-How are you today?' in the given field.</msg>
-<arg>[name="my-textarea"]</arg>
-<arg>${message}</arg>
-<arg>delay=0.1 s</arg>
+<kw name="Click" owner="Browser">
+<arg>xpath=//form[@id='nav-login-form']//button[@type='submit']</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T17:45:33.525508" elapsed="4.639968"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-22T11:19:42.063992" elapsed="0.000896"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-03-29T17:45:38.178703" level="INFO">Waited for Element with selector [name="my-select"] at state visible</msg>
-<arg>[name="my-select"]</arg>
+<arg>xpath=//span[contains(.,'Tervetuloa')]</arg>
 <arg>visible</arg>
+<arg>timeout=5s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-03-29T17:45:38.166044" elapsed="0.013007"/>
-</kw>
-<kw name="Select Options By" owner="Browser">
-<msg time="2026-03-29T17:45:38.180884" level="INFO">Selects the option(s) 2 by attribute SelectAttribute.value from element [name="my-select"].</msg>
-<arg>[name="my-select"]</arg>
-<arg>value</arg>
-<arg>2</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Selects options from select element found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T17:45:38.179652" elapsed="0.056372"/>
-</kw>
-<kw name="Type Text" owner="Browser">
-<msg time="2026-03-29T17:45:38.238002" level="INFO">Types the text 'San Francisco' in the given field.</msg>
-<arg>[name="my-datalist"]</arg>
-<arg>San Francisco</arg>
-<arg>delay=0.2 s</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2026-03-29T17:45:38.236698" elapsed="2.847167"/>
-</kw>
-<kw name="Click" owner="Browser">
-<msg time="2026-03-29T17:45:41.086537" level="INFO">Clicks the element '[name="my-check-1"]'.</msg>
-<msg time="2026-03-29T17:45:51.216146" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2026-03-29T17:45:51.216912" level="INFO">See also file:///C:/Users/elkku/OneDrive/Tiedostot/Web-Dev/front-end/hyte-projekti/playwright-log-1774795527768709500.txt for additional details.</msg>
-<msg time="2026-03-29T17:45:51.218427" level="FAIL">TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('[name="my-check-1"]')
-    - waiting for" https://www.selenium.dev/selenium/web/submitted-form.html?my-text=testiuser&amp;my-password=testisalis&amp;my-textarea=Hello%2C+Robot+Framework%21%0D%0AHow+are+you+today%3F&amp;my-readonly=Readonly+input&amp;my-sele…" navigation to finish...
-    - navigated to "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=testiuser&amp;my-password=testisalis&amp;my-textarea=Hello%2C+Robot+Framework%21%0D%0AHow+are+you+today%3F&amp;my-readonly=Readonly+input&amp;my-sele…"
-</msg>
-<arg>[name="my-check-1"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="FAIL" start="2026-03-29T17:45:41.084904" elapsed="10.144746">TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('[name="my-check-1"]')
-    - waiting for" https://www.selenium.dev/selenium/web/submitted-form.html?my-text=testiuser&amp;my-password=testisalis&amp;my-textarea=Hello%2C+Robot+Framework%21%0D%0AHow+are+you+today%3F&amp;my-readonly=Readonly+input&amp;my-sele…" navigation to finish...
-    - navigated to "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=testiuser&amp;my-password=testisalis&amp;my-textarea=Hello%2C+Robot+Framework%21%0D%0AHow+are+you+today%3F&amp;my-readonly=Readonly+input&amp;my-sele…"
-</status>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>id=my-radio</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-29T17:45:51.231028" elapsed="0.000436"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<arg>id=my-date</arg>
-<arg>2024-12-24</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-29T17:45:51.231875" elapsed="0.000181"/>
-</kw>
-<kw name="Set Input Files">
-<arg>id=my-file</arg>
-<arg>C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti/testfile.txt</arg>
-<status status="NOT RUN" start="2026-03-29T17:45:51.232468" elapsed="0.000185"/>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>css=button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-29T17:45:51.232945" elapsed="0.000165"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<arg>css=h1</arg>
-<arg>visible</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2026-03-29T17:45:51.233377" elapsed="0.000158"/>
+<status status="NOT RUN" start="2026-04-22T11:19:42.066836" elapsed="0.000541"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<var>${header}</var>
-<arg>css=h1</arg>
+<var>${text}</var>
+<arg>xpath=//span[contains(.,'Tervetuloa')]</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2026-03-29T17:45:51.233875" elapsed="0.000172"/>
+<status status="NOT RUN" start="2026-04-22T11:19:42.068158" elapsed="0.000410"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Tulossivun otsikko: ${header}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-03-29T17:45:51.234348" elapsed="0.000159"/>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${text}</arg>
+<arg>${TEST_USERNAME}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2026-04-22T11:19:42.069822" elapsed="0.000639"/>
 </kw>
-<msg time="2026-03-29T17:45:51.261389" level="INFO">Switching context to context=80c1a345-ae90-4182-b8b3-d76f6cb0f3a3 in CURRENT</msg>
-<msg time="2026-03-29T17:45:51.277785" level="INFO">Successfully changed active context: context=80c1a345-ae90-4182-b8b3-d76f6cb0f3a3</msg>
-<msg time="2026-03-29T17:45:51.324428" level="INFO">Successfully closed Context</msg>
-<status status="FAIL" start="2026-03-29T17:45:27.856604" elapsed="23.378339">TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('[name="my-check-1"]')
-    - waiting for" https://www.selenium.dev/selenium/web/submitted-form.html?my-text=testiuser&amp;my-password=testisalis&amp;my-textarea=Hello%2C+Robot+Framework%21%0D%0AHow+are+you+today%3F&amp;my-readonly=Readonly+input&amp;my-sele…" navigation to finish...
-    - navigated to "https://www.selenium.dev/selenium/web/submitted-form.html?my-text=testiuser&amp;my-password=testisalis&amp;my-textarea=Hello%2C+Robot+Framework%21%0D%0AHow+are+you+today%3F&amp;my-readonly=Readonly+input&amp;my-sele…"
-</status>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>id=diary-link</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-04-22T11:19:42.072157" elapsed="0.001732"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>id=diary-link</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-04-22T11:19:42.075121" elapsed="0.000557"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>text=Lisää uusi merkintä</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2026-04-22T11:19:42.076387" elapsed="0.000478"/>
+</kw>
+<msg time="2026-04-22T11:19:42.159098" level="INFO">Starting Browser process C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:61145</msg>
+<status status="FAIL" start="2026-04-22T11:19:42.015696" elapsed="0.061902">No keyword with name 'Split To Lines' found.</status>
 </test>
-<status status="FAIL" start="2026-03-29T17:45:27.284663" elapsed="24.041653"/>
+<status status="FAIL" start="2026-04-22T11:19:41.017767" elapsed="4.390940"/>
 </suite>
 <statistics>
 <total>
@@ -171,7 +148,7 @@ Call log:
 <tag>
 </tag>
 <suite>
-<stat name="Browser Demo" id="s1" pass="0" fail="1" skip="0">Browser Demo</stat>
+<stat name="Login Env" id="s1" pass="0" fail="1" skip="0">Login Env</stat>
 </suite>
 </statistics>
 <errors>

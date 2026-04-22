@@ -1,0 +1,41 @@
+{"level":30,"time":"2026-04-22T07:40:49.372Z","pid":28248,"hostname":"Eliass25","msg":"Listening on 127.0.0.1:51224"}
+{"level":30,"time":"2026-04-22T07:40:49.635Z","pid":28248,"hostname":"Eliass25","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-04-22T07:40:49.909Z","pid":28248,"hostname":"Eliass25","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-04-22T07:40:49.910Z","pid":28248,"hostname":"Eliass25","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-04-22T07:40:49.910Z","pid":28248,"hostname":"Eliass25","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-04-22T07:40:49.919Z","pid":28248,"hostname":"Eliass25","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-04-22T07:40:49.919Z","pid":28248,"hostname":"Eliass25","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@8fff24d60f12445fcc444df1cfa9587e\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=aa22b55c-bfac-48fd-b64c-a7c49789ac6e\"}"}
+{"level":30,"time":"2026-04-22T07:40:49.950Z","pid":28248,"hostname":"Eliass25","msg":"Setting default timeout for context context=2b1b6e4c-6c28-475d-a25f-6adc4b238384 to 10000"}
+{"level":30,"time":"2026-04-22T07:40:49.950Z","pid":28248,"hostname":"Eliass25","msg":"Changed active context: context=2b1b6e4c-6c28-475d-a25f-6adc4b238384"}
+{"level":30,"time":"2026-04-22T07:40:50.151Z","pid":28248,"hostname":"Eliass25","msg":"Video path: undefined"}
+{"level":30,"time":"2026-04-22T07:40:50.151Z","pid":28248,"hostname":"Eliass25","msg":"Changed active page"}
+{"level":30,"time":"2026-04-22T07:40:50.273Z","pid":28248,"hostname":"Eliass25","msg":"End of node method newPage"}
+{"level":30,"time":"2026-04-22T07:40:50.282Z","pid":28248,"hostname":"Eliass25","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T07:40:50.282Z","pid":28248,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-login-form in page."}
+{"level":30,"time":"2026-04-22T07:40:50.315Z","pid":28248,"hostname":"Eliass25","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T07:40:50.319Z","pid":28248,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-22T07:40:50.320Z","pid":28248,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-username in page."}
+{"level":30,"time":"2026-04-22T07:40:50.382Z","pid":28248,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-22T07:40:50.387Z","pid":28248,"hostname":"Eliass25","msg":"Start of node method typeText"}
+{"level":30,"time":"2026-04-22T07:40:50.388Z","pid":28248,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with id=nav-password in page."}
+{"level":30,"time":"2026-04-22T07:40:50.513Z","pid":28248,"hostname":"Eliass25","msg":"End of node method typeText"}
+{"level":30,"time":"2026-04-22T07:40:50.517Z","pid":28248,"hostname":"Eliass25","msg":"Start of node method click"}
+{"level":30,"time":"2026-04-22T07:40:50.517Z","pid":28248,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with xpath=//form[@id='nav-login-form']//button[@type='submit'] in page."}
+{"level":30,"time":"2026-04-22T07:40:50.642Z","pid":28248,"hostname":"Eliass25","msg":"End of node method click"}
+{"level":30,"time":"2026-04-22T07:40:50.647Z","pid":28248,"hostname":"Eliass25","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2026-04-22T07:40:50.647Z","pid":28248,"hostname":"Eliass25","msg":"Strict mode is enabled, find Locator with xpath=//span[contains(.,'Tervetuloa')] in page."}
+{"level":30,"time":"2026-04-22T07:40:55.661Z","pid":28248,"hostname":"Eliass25","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for locator('//span[contains(.,\'Tervetuloa\')]') to be visible[22m
+
+    at waitForElementState (C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:11721:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\elkku\OneDrive\Tiedostot\Web-Dev\front-end\hyte-projekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-04-22T07:40:55.673Z","pid":28248,"hostname":"Eliass25","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-04-22T07:40:55.674Z","pid":28248,"hostname":"Eliass25","Take screenshot with options: ":{"path":"C:\\Users\\elkku\\OneDrive\\Tiedostot\\Web-Dev\\front-end\\hyte-projekti\\tests\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-04-22T07:40:55.948Z","pid":28248,"hostname":"Eliass25","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-04-22T07:41:01.090Z","pid":28248,"hostname":"Eliass25","msg":"Removed page=40b52424-84c7-4891-8a3b-648388e64942 from context=2b1b6e4c-6c28-475d-a25f-6adc4b238384 page stack"}

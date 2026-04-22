@@ -38,30 +38,30 @@
 
           <div class="form-row">
             <label>Päivämäärä</label>
-            <input type="date" id="entry-date" required>
+            <input type="date" id="entry-date" name="entry-date" required>
           </div>
 
           <div class="form-row">
             <label>Mieliala</label>
-            <input type="text" id="entry-mood" placeholder="Esim. neutraali, stressaantunut" required>
+            <input type="text" id="entry-mood" name="entry-mood" placeholder="Esim. neutraali, stressaantunut" required>
           </div>
 
           <div class="form-row">
             <label>Paino (kg)</label>
-            <input type="number" id="entry-weight" step="0.1">
+            <input type="number" id="entry-weight" name="entry-weight" step="0.1">
           </div>
 
           <div class="form-row">
             <label>Uni (h)</label>
-            <input type="number" id="entry-sleep">
+            <input type="number" id="entry-sleep" name="entry-sleep">
           </div>
 
           <div class="form-row">
             <label>Muistiinpanot</label>
-            <textarea id="entry-notes" rows="4"></textarea>
+            <textarea id="entry-notes" name="entry-notes" rows="4"></textarea>
           </div>
 
-          <button type="submit" class="save-btn">Tallenna merkintä</button>
+          <button type="submit" id="saveEntry" class="save-btn">Tallenna merkintä</button>
         </form>
       </div>
 
